@@ -19,8 +19,9 @@ function Header() {
                 alt="tinder logo"
             />
 
-            <ForumIcon />
-
+            <IconButton>
+                <ForumIcon fontSize="large" className="header__icon"/>
+            </IconButton>
         </div>
     )
 }
