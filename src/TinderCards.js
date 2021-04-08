@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import TinderCard from "react-tinder-card";
 import "./TinderCards.css";
 
@@ -7,13 +7,13 @@ import "./TinderCards.css";
 function TinderCards() {
 const [people, setPeople] = useState([
     {
-        name: 'Elon Musk',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg/220px-Elon_Musk_Royal_Society_%28crop1%29.jpg'
+        name: "Elon Musk",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg/220px-Elon_Musk_Royal_Society_%28crop1%29.jpg",
     },
     {
-        name: 'Jeff Bezos',
-        url: 'https://variety.com/wp-content/uploads/2019/12/jeff_bezos2019_rev-1.png'
-    }
+        name: "Jeff Bezos",
+        url: "https://variety.com/wp-content/uploads/2019/12/jeff_bezos2019_rev-1.png",
+    },
 ]);
 
 const swiped = (direction, nameToDelete) => {
@@ -37,7 +37,7 @@ const outOfFrame = (name) => {
                         onCardLeftScreen={() => outOfFrame(person.name)} 
                     >
                         <div
-                         style={{ backgroundImage: 'url(${person.url})' }}
+                         style={{ backgroundImage: `url(${person.url})` }}
                          className="card"
                          >
                             <h3>{person.name}</h3>

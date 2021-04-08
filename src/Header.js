@@ -10,7 +10,7 @@ function Header() {
     return (
         <div className="header">            
             <IconButton>
-                <PersonIcon fontSize="Large" className="header_icon"/>
+                <PersonIcon fontSize="large" className="header_icon"/>
             </IconButton>            
 
             <img 
